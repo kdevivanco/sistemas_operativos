@@ -26,5 +26,9 @@ int main () {
 	pthread_create(&miThread, NULL, miTurno, NULL);
 	tuTurno();
 
+	pthread_join(miThread, NULL);
+	// pthread_join(tuTurno,NULL);
+
+
 	return 0;
 }
